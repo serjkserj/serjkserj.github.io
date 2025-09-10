@@ -23,12 +23,13 @@ const config = {
   url: 'https://serjkserj.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ATR_bim_docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'serjkserj', // Usually your GitHub org/user name.
-  projectName: 'ATR_bim_docs', // Usually your repo name.
+  projectName: 'atr_docs.github.io', // Usually your repo name.
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
