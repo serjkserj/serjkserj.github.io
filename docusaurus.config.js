@@ -55,7 +55,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/serjkserj/ATR_bim_docs/tree/main/',
+            'https://github.com/serjkserj/serjkserj.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -66,7 +66,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/serjkserj/ATR_bim_docs/tree/main/',
+            'https://github.com/serjkserj/serjkserj.github.io/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,6 +78,14 @@ const config = {
       }),
     ],
   ],
+
+  // Добавляем тему Mermaid для поддержки диаграмм
+  themes: ['@docusaurus/theme-mermaid'],
+
+  // Включение поддержки Mermaid диаграмм
+  markdown: {
+    mermaid: true,
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -99,7 +107,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/serjkserj/ATR_bim_docs',
+            href: 'https://github.com/serjkserj/serjkserj.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -143,7 +151,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/serjkserj/ATR_bim_docs',
+                href: 'https://github.com/serjkserj/serjkserj.github.io',
               },
             ],
           },
@@ -153,6 +161,9 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      mermaid: {
+        theme: { light: 'default', dark: 'dark' },
       },
     }),
 };
