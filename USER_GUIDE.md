@@ -52,7 +52,7 @@ npx create-docusaurus@latest revit-plugin-docs classic
 Перейдите в папку:
 
 ```bash
-cd revit-plugin-docs
+cd C:/Users/rsobr/Documents/Projects/bim_docs
 ```
 
 Запустите локальный сервер для просмотра:
