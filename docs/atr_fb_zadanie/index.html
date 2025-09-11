@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-atr_fb_zadanie" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта) | ATR BIM Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://serjkserj.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://serjkserj.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://serjkserj.github.io/docs/atr_fb_zadanie"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта) | ATR BIM Documentation"><meta data-rh="true" name="description" content="Примечание: Официальная методология FutureBIM предполагает работу в едином центральном файле &quot;Задание на отверстия&quot;."><meta data-rh="true" property="og:description" content="Примечание: Официальная методология FutureBIM предполагает работу в едином центральном файле &quot;Задание на отверстия&quot;."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://serjkserj.github.io/docs/atr_fb_zadanie"><link data-rh="true" rel="alternate" href="https://serjkserj.github.io/docs/atr_fb_zadanie" hreflang="en"><link data-rh="true" rel="alternate" href="https://serjkserj.github.io/docs/atr_fb_zadanie" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта)","item":"https://serjkserj.github.io/docs/atr_fb_zadanie"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="ATR BIM Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="ATR BIM Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ba795a2b.css">
+<script src="/assets/js/runtime~main.c0cc3c8d.js" defer="defer"></script>
+<script src="/assets/js/main.f4431d9a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="ATR BIM Documentation Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="ATR BIM Documentation Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ATR BIM Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/introduction">Документация</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/serjkserj/ATR_bim_docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/introduction">Начало работы</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/introduction">Введение</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/atr_fb_zadanie">Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта)</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Начало работы</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта)</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта)</h1></header>
+<blockquote>
+<p><strong>Примечание:</strong> Официальная методология FutureBIM предполагает работу в <strong>едином центральном файле &quot;Задание на отверстия&quot;</strong>.<br>
+<!-- -->Ваш подход — «для каждого файла AR свой файл SHAFT» — отличается от рекомендаций и несет риски:</p>
+<ul>
+<li>сложность координации</li>
+<li>временные задержки</li>
+<li>невозможность изменения значений в таблицах</li>
+<li>риск потери данных из-за различных ID одного и того же кубика</li>
+<li>постоянная потребность в участии BIM-специалистов</li>
+</ul>
+<p>Тем не менее, инструкция адаптирована под ваш workflow с учетом нюансов.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="общие-положения">Общие положения<a href="#общие-положения" class="hash-link" aria-label="Direct link to Общие положения" title="Direct link to Общие положения">​</a></h2>
+<p>В данном подходе файл <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code> выступает в роли файла <strong>&quot;Задание на отверстия&quot;</strong> для соответствующей архитектурной модели <code>MNVNK_ATR_PD_B12.2_K1_AR_R2022.rvt</code>.</p>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">%%{init: {&#x27;theme&#x27;: &#x27;base&#x27;, &#x27;themeVariables&#x27;: { &#x27;primaryColor&#x27;: &#x27;#ffd54f&#x27;, &#x27;secondaryColor&#x27;: &#x27;#4fc3f7&#x27;}}}%%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">graph TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A[Начало: Инженеры создали/обновили кубики в файле SHAFT] --&gt; B{Какой вариант работы?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Полный цикл согласования&lt;br&gt;&lt;small&gt;(финальные стадии, юридическая точность)&lt;/small&gt;| C[Согласование в файле SHAFT: ИОС → АР → КР]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Упрощенный вариант&lt;br&gt;&lt;small&gt;(ранние стадии, быстрые итерации)&lt;/small&gt;| D[Обновление связи в файле AR]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; E[Копирование СОГЛАСОВАННЫХ кубиков из SHAFT в AR/KR]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; F[Анализ изменений: ручная правка или полная замена?]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt;|Незначительные| G[Редактировать существующие кубики вручную]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt;|Значительные| H[Удалить старые кубики в AR → Импортировать новые из SHAFT]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; I[Создание отверстий: функция &#x27;Соединение элементов&#x27;]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; I</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt; J[Оформление чертежей]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style A fill:#a5d6a7,stroke:#388e3c</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style B fill:#fff176,stroke:#fbc02d</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style C fill:#4fc3f7,stroke:#0288d1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style D fill:#ffcc80,stroke:#fb8c00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style E fill:#4fc3f7,stroke:#0288d1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style F fill:#ffcc80,stroke:#fb8c00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style G fill:#ffcc80,stroke:#fb8c00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style H fill:#ffcc80,stroke:#fb8c00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style I fill:#a5d6a7,stroke:#388e3c</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style J fill:#a5d6a7,stroke:#388e3c</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этап-1-подготовка-файла-shaft-и-создание-кубиков-инженеры--bim-специалист">Этап 1: Подготовка файла SHAFT и создание &quot;Кубиков&quot; (инженеры / BIM-специалист)<a href="#этап-1-подготовка-файла-shaft-и-создание-кубиков-инженеры--bim-специалист" class="hash-link" aria-label="Direct link to Этап 1: Подготовка файла SHAFT и создание &quot;Кубиков&quot; (инженеры / BIM-специалист)" title="Direct link to Этап 1: Подготовка файла SHAFT и создание &quot;Кубиков&quot; (инженеры / BIM-специалист)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-создание-файла-задания-на-отверстия">1.1. Создание файла задания на отверстия<a href="#11-создание-файла-задания-на-отверстия" class="hash-link" aria-label="Direct link to 1.1. Создание файла задания на отверстия" title="Direct link to 1.1. Создание файла задания на отверстия">​</a></h3>
+<ul>
+<li>BIM-специалист или инженер создает новый файл Revit на основе подготовленного шаблона, называя его, например, <strong><code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code></strong>.<!-- -->
+<ul>
+<li>Шаблон обычно «чище»: без труб, стен, материалов — для меньшего веса и быстрой работы.</li>
+</ul>
+</li>
+<li>Файл сохраняется в папку с проектом.<!-- -->
+<ul>
+<li>Если используется Revit Server: сначала сохраняется локально → создается локальная копия → копия загружается на сервер.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-подгрузка-связанных-моделей">1.2. Подгрузка связанных моделей<a href="#12-подгрузка-связанных-моделей" class="hash-link" aria-label="Direct link to 1.2. Подгрузка связанных моделей" title="Direct link to 1.2. Подгрузка связанных моделей">​</a></h3>
+<p>В файл <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code> подгружаются <strong>все необходимые связи</strong>:</p>
+<ul>
+<li><strong>Архитектурная модель:</strong> <code>MNVNK_ATR_PD_B12.2_K1_AR_R2022.rvt</code></li>
+<li><strong>Конструктивная модель:</strong> (например, KR, если существует)</li>
+<li><strong>Инженерные модели:</strong> (например, ВК, ОВ и др.)</li>
+</ul>
+<blockquote>
+<p><strong>Важно:</strong></p>
+<ul>
+<li>Координаты и уровни в файле SHAFT должны <strong>точно соответствовать</strong> модели архитектуры.</li>
+<li>Для каждой связанной модели создается <strong>отдельный рабочий набор</strong>.</li>
+<li>Рекомендуемое именование: <code>_Поле1_Связь_Поле2</code><br>
+<!-- -->Примеры: <code>_01_Связь_АР</code>, <code>_02_Связь_КР</code>, <code>_03_Связь_ОВ1</code></li>
+</ul>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-настройка-ролей-и-контроль-изменений-bim-специалист">1.3. Настройка ролей и контроль изменений (BIM-специалист)<a href="#13-настройка-ролей-и-контроль-изменений-bim-специалист" class="hash-link" aria-label="Direct link to 1.3. Настройка ролей и контроль изменений (BIM-специалист)" title="Direct link to 1.3. Настройка ролей и контроль изменений (BIM-специалист)">​</a></h3>
+<ul>
+<li>Активируйте функцию <strong>«Контроль изменений»</strong> во вкладке FutureBIM.</li>
+<li>Все участники (инженеры, архитекторы, конструкторы) должны <strong>синхронизироваться в модели</strong>, чтобы их имена появились в списке ролей.</li>
+<li>Назначьте роли: «инженер», «архитектор», «конструктор».</li>
+<li>Назначьте <strong>разрешения на редактирование параметров согласования</strong>:<!-- -->
+<ul>
+<li>Инженер → может ставить галочку <strong>«Согласовано ИОС»</strong></li>
+<li>Архитектор → <strong>«Согласовано АР»</strong></li>
+<li>Конструктор → <strong>«Согласовано КР»</strong></li>
+</ul>
+</li>
+<li>Настройки ролей можно <strong>экспортировать/импортировать через XML</strong> для переиспользования.</li>
+<li><strong>Требование:</strong> «Контроль изменений» работает <strong>только если</strong>:<!-- -->
+<ul>
+<li>Плагин FutureBIM установлен у всех участников</li>
+<li>Активирована галочка <strong>«Включить контроль»</strong></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="14-создание-кубиков-инженеры">1.4. Создание &quot;Кубиков&quot; (инженеры)<a href="#14-создание-кубиков-инженеры" class="hash-link" aria-label="Direct link to 1.4. Создание &quot;Кубиков&quot; (инженеры)" title="Direct link to 1.4. Создание &quot;Кубиков&quot; (инженеры)">​</a></h3>
+<ul>
+<li>Используйте функцию <strong>«Задание на отверстия»</strong> во вкладке «Модель».</li>
+<li>Плагин автоматически создает <strong>«кубики»</strong> (условные представления отверстий) в местах пересечения инженерных сетей с несущими конструкциями.<!-- -->
+<ul>
+<li>Формы: круглые (цилиндры) или прямоугольные (параллелепипеды).</li>
+<li>Габариты, привязки, отметки — <strong>автоматически кратны 5 мм</strong>.</li>
+</ul>
+</li>
+<li>Создаются <strong>только</strong> для пересечений с:<!-- -->
+<ul>
+<li>Железобетонными конструкциями</li>
+<li>Кладкой</li>
+<li>(Фильтр по параметру типа/экземпляра: «Монолит», «Кладка», «Обстройка»)</li>
+</ul>
+</li>
+<li>Автоматически заполняются параметры:<!-- -->
+<ul>
+<li><code>Номер кубика</code> = ID элемента Revit</li>
+<li><code>Тип системы</code> (ОВ1, ВК1 и т.д.)</li>
+<li><code>Дата изменения</code></li>
+</ul>
+</li>
+<li>❗ <strong>Не объединяйте кубики на этом этапе!</strong> Решение об объединении принимают АР/КР позже.</li>
+<li>Перед выдачей задания инженеры <strong>должны проверить</strong>:<!-- -->
+<ul>
+<li>Пересечения коммуникаций между собой</li>
+<li>Пересечения с колоннами, балками и т.д.</li>
+<li>При необходимости — скорректировать трассировку.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этап-2-проверка-задания-на-отверстия-инженеры">Этап 2: Проверка задания на отверстия (инженеры)<a href="#этап-2-проверка-задания-на-отверстия-инженеры" class="hash-link" aria-label="Direct link to Этап 2: Проверка задания на отверстия (инженеры)" title="Direct link to Этап 2: Проверка задания на отверстия (инженеры)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-выполнение-проверки">2.1. Выполнение проверки<a href="#21-выполнение-проверки" class="hash-link" aria-label="Direct link to 2.1. Выполнение проверки" title="Direct link to 2.1. Выполнение проверки">​</a></h3>
+<ul>
+<li>Используйте функцию <strong>«Проверить задание»</strong>.</li>
+<li>Плагин выявит:<!-- -->
+<ul>
+<li>Отсутствующие кубики в местах пересечений</li>
+<li>Некорректные кубики (неверный габарит, ID, тип системы)</li>
+<li>Лишние кубики</li>
+</ul>
+</li>
+<li>Настройки фильтров (системы, конструкции, корпуса, этажи) сохраняются из функции «Задание на отверстия».</li>
+<li>Результаты записываются в параметр <strong>«Статус»</strong> кубиков.</li>
+<li>Отчет можно <strong>экспортировать в CSV</strong> и прикладывать к официальной переписке → служит гарантией выполнения и проверки.</li>
+</ul>
+<blockquote>
+<p><strong>Важно:</strong> Проверка должна быть выполнена <strong>инженерами до выдачи задания</strong>.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этап-3-согласование-кубиков-инженеры-архитекторы-конструкторы">Этап 3: Согласование &quot;Кубиков&quot; (инженеры, архитекторы, конструкторы)<a href="#этап-3-согласование-кубиков-инженеры-архитекторы-конструкторы" class="hash-link" aria-label="Direct link to Этап 3: Согласование &quot;Кубиков&quot; (инженеры, архитекторы, конструкторы)" title="Direct link to Этап 3: Согласование &quot;Кубиков&quot; (инженеры, архитекторы, конструкторы)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-основной-вариант-полный-цикл-согласования-иос--ар--кр">3.1. Основной вариант: Полный цикл согласования (ИОС → АР → КР)<a href="#31-основной-вариант-полный-цикл-согласования-иос--ар--кр" class="hash-link" aria-label="Direct link to 3.1. Основной вариант: Полный цикл согласования (ИОС → АР → КР)" title="Direct link to 3.1. Основной вариант: Полный цикл согласования (ИОС → АР → КР)">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">%%{init: {&#x27;theme&#x27;: &#x27;base&#x27;, &#x27;themeVariables&#x27;: { &#x27;primaryColor&#x27;: &#x27;#e1bee7&#x27;, &#x27;secondaryColor&#x27;: &#x27;#ba68c8&#x27;}}}%%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">graph LR</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    subgraph &quot;Файл: MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    direction TB</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A[Инженеры (ИОС)&lt;br&gt;1. Создают/редактируют кубики&lt;br&gt;2. Ставят &#x27;Согласовано ИОС = Да&#x27;&lt;br&gt;3. Экспорт отчета CSV] --&gt; B[Архитекторы (АР)&lt;br&gt;1. Проверяют кубики (ИОС=Да, АР=Нет)&lt;br&gt;2. Могут: Переместить, Изменить габарит, Объединить&lt;br&gt;3. Сбрасывается &#x27;Согласовано ИОС&#x27;&lt;br&gt;4. Ставят &#x27;Согласовано АР = Да&#x27;] --&gt; C[Конструкторы (КР)&lt;br&gt;1. Проверяют кубики (ИОС=Да, АР=Да, КР=Нет)&lt;br&gt;2. Могут: Переместить, Изменить габарит, Объединить&lt;br&gt;3. Сбрасываются &#x27;Согласовано ИОС&#x27; и &#x27;Согласовано АР&#x27;&lt;br&gt;4. Ставят &#x27;Согласовано КР = Да&#x27;]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    end</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D[Кубик согласован всеми!]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E[Копирование в файлы AR/KR&lt;br&gt;Функция &#x27;Скопировать кубики&#x27;&lt;br&gt;Фильтр: ИОС=Да, АР=Да, КР=Да]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style A fill:#bbdefb,stroke:#1976d2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style B fill:#c8e6c9,stroke:#388e3c</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style C fill:#ffccbc,stroke:#bf360c</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style D fill:#a5d6a7,stroke:#2e7d32</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style E fill:#a5d6a7,stroke:#2e7d32</span><br></span></code></pre></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="последовательность-согласования">Последовательность согласования<a href="#последовательность-согласования" class="hash-link" aria-label="Direct link to Последовательность согласования" title="Direct link to Последовательность согласования">​</a></h4>
+<p>Процесс идет строго последовательно в файле <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code>:</p>
+<ol>
+<li><strong>Инженеры (ИОС):</strong><br>
+<!-- -->Согласовывают свои кубики → ставят <strong>«Согласовано ИОС = Да»</strong>.<br>
+<!-- -->В таблицах видят только кубики, не согласованные ими.</li>
+<li><strong>Архитекторы (АР):</strong><br>
+<!-- -->Рассматривают кубики, где <strong>«Согласовано ИОС = Да»</strong>, но <strong>«Согласовано АР = Нет»</strong>.</li>
+<li><strong>Конструкторы (КР):</strong><br>
+<!-- -->Рассматривают кубики, где <strong>«Согласовано ИОС = Да»</strong> и <strong>«Согласовано АР = Да»</strong>, но <strong>«Согласовано КР = Нет»</strong>.</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="действия-с-кубиками">Действия с &quot;Кубиками&quot;<a href="#действия-с-кубиками" class="hash-link" aria-label="Direct link to Действия с &quot;Кубиками&quot;" title="Direct link to Действия с &quot;Кубиками&quot;">​</a></h4>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">stateDiagram-v2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    [*] --&gt; Новый: Создан инженером</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Новый --&gt; Согласован_ИОС: Инженер ставит &#x27;Согласовано ИОС = Да&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Согласован_ИОС --&gt; На_согласовании_АР: Передан архитектору</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    state На_согласовании_АР {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        [*] --&gt; Ожидание: Кубик в таблице АР</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Ожидание --&gt; Изменен_АР: Архитектор изменил габарит/позицию</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Изменен_АР --&gt; Согласован_ИОС: Сбрасывается! Требуется повторное согласование ИОС</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Ожидание --&gt; Согласован_АР: Архитектор ставит &#x27;Согласовано АР = Да&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Согласован_АР --&gt; На_согласовании_КР: Передан конструктору</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    state На_согласовании_КР {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        [*] --&gt; Ожидание2: Кубик в таблице КР</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Ожидание2 --&gt; Изменен_КР: Конструктор изменил габарит/позицию/объединил</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Изменен_КР --&gt; Согласован_ИОС: Сбрасываются ВСЕ согласования!</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Ожидание2 --&gt; Согласован_КР: Конструктор ставит &#x27;Согласовано КР = Да&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Согласован_КР --&gt; Готов_к_копированию: Все согласования = Да</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Готов_к_копированию --&gt; Скопирован_в_AR_KR: Функция &#x27;Скопировать кубики&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Скопирован_в_AR_KR --&gt; Создано_отверстие: Функция &#x27;Соединение элементов&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Создано_отверстие --&gt; [*]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    note right of Изменен_АР</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        При изменении АР:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Сбрасывается &#x27;Согласовано ИОС&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Заполняется параметр &#x27;Статус&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Заполняется &#x27;Комментарий АР&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    end note</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    note right of Изменен_КР</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        При изменении КР:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Сбрасываются &#x27;Согласовано ИОС&#x27; и &#x27;Согласовано АР&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Заполняется параметр &#x27;Статус&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        - Заполняется &#x27;Комментарий КР&#x27;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    end note</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<ul>
+<li>
+<p><strong>Изменение габаритов / Перемещение:</strong>
+Если АР или КР меняет габарит/позицию → плагин <strong>автоматически сбрасывает</strong> предыдущие галочки согласования (например, «Согласовано ИОС»). Пользователь не может это контролировать.</p>
+</li>
+<li>
+<p><strong>Статусы изменений (параметр «Статус»):</strong></p>
+<table><thead><tr><th>Статус</th><th>Действие</th></tr></thead><tbody><tr><td><code>Удалить</code></td><td>Кубик <strong>не удаляется</strong>, но помечается для удаления инженерами.</td></tr><tr><td><code>Добавить</code></td><td>Используется, если кубик добавляется в проект.</td></tr><tr><td><code>Изменить габарит</code></td><td>Указывается при изменении размеров.</td></tr><tr><td><code>Переместить</code></td><td>Указывается при изменении положения.</td></tr><tr><td><code>Обсудить</code></td><td>Требуется обсуждение. Добавляется информация в «Комментарии АР/КР/ИОС».</td></tr><tr><td>(пусто)</td><td>Кубик остается без изменений.</td></tr></tbody></table>
+<blockquote>
+<p><strong>Если нужно несколько статусов → объединяйте через <code>_</code></strong><br>
+<!-- -->Пример: <code>Изменить габарит_Переместить</code></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Комментарии:</strong><br>
+<!-- -->Используются для обмена информацией между разделами.</p>
+</li>
+<li>
+<p><strong>История изменений:</strong><br>
+<!-- -->Фиксирует: кто, что, когда изменил (дата, время, ID, параметр, старое/новое значение, пользователь, рабочее место).<br>
+<!-- -->Отчет можно <strong>экспортировать в CSV</strong>.</p>
+</li>
+<li>
+<p><strong>Объединить кубики:</strong><br>
+<!-- -->АР и КР могут объединять пересекающиеся кубики (или на расстоянии ≤100 мм) → при этом <strong>сбрасываются галочки согласования</strong>.</p>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-альтернативный-упрощенный-вариант-обновление-и-замена-кубиков-для-ускоренных-итераций">3.2. Альтернативный упрощенный вариант: Обновление и замена &quot;Кубиков&quot; (для ускоренных итераций)<a href="#32-альтернативный-упрощенный-вариант-обновление-и-замена-кубиков-для-ускоренных-итераций" class="hash-link" aria-label="Direct link to 3.2. Альтернативный упрощенный вариант: Обновление и замена &quot;Кубиков&quot; (для ускоренных итераций)" title="Direct link to 3.2. Альтернативный упрощенный вариант: Обновление и замена &quot;Кубиков&quot; (для ускоренных итераций)">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">%%{init: {&#x27;theme&#x27;: &#x27;base&#x27;, &#x27;themeVariables&#x27;: { &#x27;primaryColor&#x27;: &#x27;#ffab91&#x27;, &#x27;secondaryColor&#x27;: &#x27;#d84315&#x27;}}}%%</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">graph TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A[Инженеры: Обновили кубики в SHAFT&lt;br&gt;• Зафиксировали Статус/Комментарий/Дата] --&gt; B[BIM/Архитектор: Обновил связь SHAFT в файле AR]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C{Анализ изменений&lt;br&gt;на преднастроенных 3D видах}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Есть кубики в перекрытиях?| D[❗ СИГНАЛ КОЛЛИЗИИ&lt;br&gt;Уведомить инженеров!]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Незначительные изменения| E[Редактировать существующие кубики вручную в AR]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Значительные изменения| F[Удалить ВСЕ старые кубики в AR]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[Импорт новых кубиков из SHAFT&lt;br&gt;• Фильтр по Рабочему набору&lt;br&gt;• Фильтр по Типу системы]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H[Создание отверстий&lt;br&gt;Функция &#x27;Соединение элементов&#x27;&lt;br&gt;• Режущие: Кубики&lt;br&gt;• Целевые: Стены, Полы, Потолки]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; H</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; H</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style A fill:#e3f2fd,stroke:#1976d2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style B fill:#e8f5e8,stroke:#2e7d32</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style C fill:#fff3e0,stroke:#ef6c00</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style D fill:#ffcdd2,stroke:#c62828</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style E fill:#c8e6c9,stroke:#2e7d32</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style F fill:#ffccbc,stroke:#bf360c</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style G fill:#ffecb3,stroke:#ffa000</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    style H fill:#a5d6a7,stroke:#2e7d32</span><br></span></code></pre></div></div>
+<blockquote>
+<p><strong>Применяется для ускорения процесса</strong> на ранних стадиях или при незначительных правках.
+<strong>Ответственность за проверку и принятие изменений</strong> ложится на BIM-специалиста или архитектора в файле AR.<br>
+<strong>Риск:</strong> Потеря истории изменений и контроля согласования. Не рекомендуется на финальных стадиях.</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="процесс-обновления">Процесс обновления<a href="#процесс-обновления" class="hash-link" aria-label="Direct link to Процесс обновления" title="Direct link to Процесс обновления">​</a></h4>
+<ol>
+<li>
+<p><strong>Подготовка файла SHAFT (Инженеры):</strong></p>
+<ul>
+<li>Вносят изменения в <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code>: добавляют, удаляют, перемещают, изменяют габариты кубиков.</li>
+<li><strong>Обязательно фиксируют изменения</strong> в параметрах кубиков: <code>Статус</code>, <code>Комментарий ИОС</code>, <code>Дата изменения</code>.</li>
+<li>Сохраняют и синхронизируют файл.</li>
+</ul>
+</li>
+<li>
+<p><strong>Обновление связи в файле AR (BIM / Архитектор):</strong></p>
+<ul>
+<li>Открывают <code>MNVNK_ATR_PD_B12.2_K1_AR_R2022.rvt</code>.</li>
+<li>Обновляют связанную модель <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code> через менеджер связей Revit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Анализ изменений (BIM / Архитектор):</strong></p>
+<ul>
+<li>Используют <strong>преднастроенные 3D виды</strong> в файле AR для визуального анализа.</li>
+<li><strong>Ключевая проверка:</strong> Наличие <strong>кубиков в перекрытиях</strong> → это <strong>сигнал коллизии</strong>, требует уведомления инженеров.<!-- -->
+<blockquote>
+<p><em>В вашем процессе отверстия в перекрытиях создаются <strong>вертикальными шахтами</strong>, а не кубиками.</em></p>
+</blockquote>
+</li>
+<li>Оценка масштаба:<!-- -->
+<ul>
+<li><strong>Незначительные изменения</strong> (1-2 кубика, небольшой сдвиг/габарит) → <strong>редактировать вручную</strong> в файле AR.</li>
+<li><strong>Значительные изменения</strong> (много новых/удаленных/измененных) → <strong>полная замена</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Замена &quot;Кубиков&quot; (BIM / Архитектор):</strong></p>
+<ul>
+<li><strong>Удаление старых:</strong> Выделить и удалить все старые кубики (категория «Обобщенная модель») в файле AR.</li>
+<li><strong>Импорт новых:</strong>
+<ul>
+<li>Используйте функцию <strong>«Импорт кубиков»</strong> (или «Скопировать кубики»).</li>
+<li>Источник: связанная модель <code>MNVNK_ATR_PD_B12.2_K1_SHAFT.rvt</code>.</li>
+<li><strong>Фильтрация:</strong> Выберите нужный <strong>Рабочий набор</strong> (например, <code>_03_Связь_ОВ1</code>) и/или <strong>Тип системы</strong>.</li>
+<li>Запустите импорт → плагин создаст новые кубики в файле AR.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Создание реальных отверстий (BIM / Архитектор):</strong></p>
+<ul>
+<li>Используйте функцию <strong>«Соединение элементов»</strong>.</li>
+<li>Режущие элементы: только что импортированные <strong>«кубики»</strong> (категория «Обобщенные модели»).</li>
+<li>Целевые элементы: <strong>Стены, Полы, Потолки</strong>.</li>
+<li>Запустите функцию → плагин выполнит «Соединить» → создаются физические проемы.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этап-4-копирование-и-финализация-отверстий-bim-специалист--архитекторы--конструкторы">Этап 4: Копирование и финализация отверстий (BIM-специалист / архитекторы / конструкторы)<a href="#этап-4-копирование-и-финализация-отверстий-bim-специалист--архитекторы--конструкторы" class="hash-link" aria-label="Direct link to Этап 4: Копирование и финализация отверстий (BIM-специалист / архитекторы / конструкторы)" title="Direct link to Этап 4: Копирование и финализация отверстий (BIM-специалист / архитекторы / конструкторы)">​</a></h2>
+<blockquote>
+<p><em>Применимо в основном к <strong>основному варианту</strong> после полного согласования.</em></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-копирование-согласованных-кубиков">4.1. Копирование согласованных кубиков<a href="#41-копирование-согласованных-кубиков" class="hash-link" aria-label="Direct link to 4.1. Копирование согласованных кубиков" title="Direct link to 4.1. Копирование согласованных кубиков">​</a></h3>
+<ul>
+<li>Кубик может быть скопирован в модели АР/КР, если:<!-- -->
+<ul>
+<li><code>Согласовано АР = Да</code></li>
+<li><code>Согласовано КР = Да</code></li>
+<li><code>Согласовано ИОС = Да</code></li>
+</ul>
+</li>
+<li>Используйте функцию <strong>«Скопировать кубики»</strong>.<!-- -->
+<ul>
+<li>Работайте в модели AR/KR → подгрузите файл SHAFT как связь.</li>
+<li>Режим: <strong>«по фильтру»</strong> → фильтруйте <strong>только полностью согласованные кубики</strong>.</li>
+</ul>
+</li>
+<li><strong>Важно:</strong>
+<ul>
+<li>Плагин <strong>не дублирует</strong> кубики в том же месте, если их габариты/положение не менялись.</li>
+<li>Если кубик был скопирован вручную или изменен в AR/KR → при повторной генерации он считается <strong>новым элементом</strong> (ID меняется, согласование сбрасывается).</li>
+<li>Для обновления параметров таких кубиков → используйте <strong>«Задание на отверстия. Обновить»</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-создание-реальных-отверстий">4.2. Создание реальных отверстий<a href="#42-создание-реальных-отверстий" class="hash-link" aria-label="Direct link to 4.2. Создание реальных отверстий" title="Direct link to 4.2. Создание реальных отверстий">​</a></h3>
+<ul>
+<li>После копирования кубики пересекаются с конструкциями.</li>
+<li>Для создания физических отверстий:<!-- -->
+<ul>
+<li><strong>Ручной способ:</strong> стандартная функция Revit <strong>«Соединить»</strong>.</li>
+<li><strong>Автоматизация:</strong> функция FutureBIM <strong>«Соединение элементов»</strong>.<!-- -->
+<ul>
+<li>Выберите: «Обобщенные модели» (кубики) + категории (стены, перекрытия, потолки, полы).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="43-оформление-чертежей">4.3. Оформление чертежей<a href="#43-оформление-чертежей" class="hash-link" aria-label="Direct link to 4.3. Оформление чертежей" title="Direct link to 4.3. Оформление чертежей">​</a></h3>
+<ul>
+<li>Копированные кубики отображаются:<!-- -->
+<ul>
+<li>На <strong>разрезах</strong> по ГОСТу</li>
+<li>На <strong>планах</strong> со штриховкой</li>
+</ul>
+</li>
+<li>Используйте <strong>марку для кубиков</strong> от FutureBIM → отображает: тип системы, габариты, отметку низа проема от чистого пола.</li>
+<li>Функция <strong>«Отметки проемов»</strong> → автоматически заполняет параметры «Верх проема» и «Низ проема».</li>
+<li>Параметры семейства кубика:<!-- -->
+<ul>
+<li><code>Видимость вверх</code> / <code>Видимость вниз</code> → настраивают отображение линии отверстия на планах, если секущий диапазон не затрагивает основной объем (избегает необходимости менять секущий диапазон).</li>
+<li><code>Дополнительная ширина</code> / <code>Дополнительная толщина</code> → увеличивают габариты кубика для прорезания дополнительных слоев (утеплитель, пол, потолок).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-отличия-вашего-подхода-от-рекомендаций-futurebim">Ключевые отличия вашего подхода от рекомендаций FutureBIM<a href="#ключевые-отличия-вашего-подхода-от-рекомендаций-futurebim" class="hash-link" aria-label="Direct link to Ключевые отличия вашего подхода от рекомендаций FutureBIM" title="Direct link to Ключевые отличия вашего подхода от рекомендаций FutureBIM">​</a></h2>
+<ol>
+<li>
+<p><strong>Множество SHAFT-файлов:</strong><br>
+<!-- -->Ваш подход «для каждого файла AR свой файл SHAFT» <strong>противоречит принципу единого файла</strong> → риск проблем с координацией, уникальными ID, контролем.</p>
+</li>
+<li>
+<p><strong>Редактирование связанных моделей:</strong><br>
+<!-- -->Файл SHAFT добавляется в AR как <strong>связь</strong> → <strong>Revit не позволяет редактировать элементы связи</strong>.<br>
+<!-- -->→ Архитекторы и конструкторы <strong>не могут согласовывать кубики, находясь в файле AR</strong>.<br>
+<!-- -->→ Для согласования (Этап 3) <strong>необходимо работать напрямую в файле SHAFT</strong>.<br>
+<!-- -->→ Только после согласования — копировать финальные кубики <strong>из SHAFT в AR/KR</strong> (Этап 4).</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Рекомендация:</strong> Пересмотрите workflow на предмет перехода к единому файлу «Задание на отверстия» для повышения эффективности и надежности.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="дополнительное-примечание-по-упрощенному-варианту">Дополнительное примечание по упрощенному варианту<a href="#дополнительное-примечание-по-упрощенному-варианту" class="hash-link" aria-label="Direct link to Дополнительное примечание по упрощенному варианту" title="Direct link to Дополнительное примечание по упрощенному варианту">​</a></h2>
+<p>Хотя упрощенный вариант значительно ускоряет процесс, он <strong>несет риски</strong>:</p>
+<ul>
+<li>Потеря истории изменений</li>
+<li>Отсутствие формального контроля согласования</li>
+</ul>
+<p><strong>Рекомендуется использовать только:</strong></p>
+<ul>
+<li>На ранних стадиях проектирования</li>
+<li>Для незначительных правок</li>
+</ul>
+<p><strong>На финальных стадиях обязательно переходите на полный цикл согласования (ИОС → АР → КР)</strong> для обеспечения максимальной точности и юридической/технической корректности документации.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/serjkserj/ATR_bim_docs/tree/main/docs/atr_fb_zadanie.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/introduction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Введение</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#общие-положения" class="table-of-contents__link toc-highlight">Общие положения</a></li><li><a href="#этап-1-подготовка-файла-shaft-и-создание-кубиков-инженеры--bim-специалист" class="table-of-contents__link toc-highlight">Этап 1: Подготовка файла SHAFT и создание &quot;Кубиков&quot; (инженеры / BIM-специалист)</a><ul><li><a href="#11-создание-файла-задания-на-отверстия" class="table-of-contents__link toc-highlight">1.1. Создание файла задания на отверстия</a></li><li><a href="#12-подгрузка-связанных-моделей" class="table-of-contents__link toc-highlight">1.2. Подгрузка связанных моделей</a></li><li><a href="#13-настройка-ролей-и-контроль-изменений-bim-специалист" class="table-of-contents__link toc-highlight">1.3. Настройка ролей и контроль изменений (BIM-специалист)</a></li><li><a href="#14-создание-кубиков-инженеры" class="table-of-contents__link toc-highlight">1.4. Создание &quot;Кубиков&quot; (инженеры)</a></li></ul></li><li><a href="#этап-2-проверка-задания-на-отверстия-инженеры" class="table-of-contents__link toc-highlight">Этап 2: Проверка задания на отверстия (инженеры)</a><ul><li><a href="#21-выполнение-проверки" class="table-of-contents__link toc-highlight">2.1. Выполнение проверки</a></li></ul></li><li><a href="#этап-3-согласование-кубиков-инженеры-архитекторы-конструкторы" class="table-of-contents__link toc-highlight">Этап 3: Согласование &quot;Кубиков&quot; (инженеры, архитекторы, конструкторы)</a><ul><li><a href="#31-основной-вариант-полный-цикл-согласования-иос--ар--кр" class="table-of-contents__link toc-highlight">3.1. Основной вариант: Полный цикл согласования (ИОС → АР → КР)</a></li><li><a href="#32-альтернативный-упрощенный-вариант-обновление-и-замена-кубиков-для-ускоренных-итераций" class="table-of-contents__link toc-highlight">3.2. Альтернативный упрощенный вариант: Обновление и замена &quot;Кубиков&quot; (для ускоренных итераций)</a></li></ul></li><li><a href="#этап-4-копирование-и-финализация-отверстий-bim-специалист--архитекторы--конструкторы" class="table-of-contents__link toc-highlight">Этап 4: Копирование и финализация отверстий (BIM-специалист / архитекторы / конструкторы)</a><ul><li><a href="#41-копирование-согласованных-кубиков" class="table-of-contents__link toc-highlight">4.1. Копирование согласованных кубиков</a></li><li><a href="#42-создание-реальных-отверстий" class="table-of-contents__link toc-highlight">4.2. Создание реальных отверстий</a></li><li><a href="#43-оформление-чертежей" class="table-of-contents__link toc-highlight">4.3. Оформление чертежей</a></li></ul></li><li><a href="#ключевые-отличия-вашего-подхода-от-рекомендаций-futurebim" class="table-of-contents__link toc-highlight">Ключевые отличия вашего подхода от рекомендаций FutureBIM</a></li><li><a href="#дополнительное-примечание-по-упрощенному-варианту" class="table-of-contents__link toc-highlight">Дополнительное примечание по упрощенному варианту</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Документация</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/serjkserj/ATR_bim_docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 ATR BIM Documentation. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
