@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-ATR_Navisworks_Работа с коллизиями" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Navisworks: Работа с коллизиями | ATR BIM Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://serjkserj.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://serjkserj.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://serjkserj.github.io/docs/ATR_Navisworks_Работа с коллизиями"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Navisworks: Работа с коллизиями | ATR BIM Documentation"><meta data-rh="true" name="description" content="Анализ коллизий, создание отчетов (настройка столбцов и ID для &quot;неищущихся&quot; элементов), работа с плагинами (propetrties +), проверка координат файлов сборки, фильтрация элементов по выбору"><meta data-rh="true" property="og:description" content="Анализ коллизий, создание отчетов (настройка столбцов и ID для &quot;неищущихся&quot; элементов), работа с плагинами (propetrties +), проверка координат файлов сборки, фильтрация элементов по выбору"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://serjkserj.github.io/docs/ATR_Navisworks_Работа с коллизиями"><link data-rh="true" rel="alternate" href="https://serjkserj.github.io/docs/ATR_Navisworks_Работа с коллизиями" hreflang="en"><link data-rh="true" rel="alternate" href="https://serjkserj.github.io/docs/ATR_Navisworks_Работа с коллизиями" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Navisworks: Работа с коллизиями","item":"https://serjkserj.github.io/docs/ATR_Navisworks_Работа с коллизиями"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="ATR BIM Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="ATR BIM Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.a05840f5.css">
+<script src="/assets/js/runtime~main.42ebea35.js" defer="defer"></script>
+<script src="/assets/js/main.f08f7cca.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="ATR BIM Documentation Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="ATR BIM Documentation Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ATR BIM Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/introduction">Документация</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/serjkserj/ATR_bim_docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/introduction">Начало работы</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/atr_fb_zadanie">Инструкции</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/atr_fb_zadanie">Инструкция по работе с заданиями на отверстия в Revit с использованием плагина FutureBIM (адаптировано для проекта)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ATR_Clashes Manager_Отработка коллизий_Архитекторам">Clashes Manager: Отработка коллизий для архитекторов</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/ATR_Navisworks_Работа с коллизиями">Navisworks: Работа с коллизиями</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ATR_Выгрузка  моделей 12.2 V.2">Выгрузка моделей 12.2 V.2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ATR_Заполнение Код СВОР для архитекторов">Заполнение Код СВОР для архитекторов</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/ATR_Подрезка коллизий_Revit Helper">Подрезка коллизий Revit Helper</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/База_знаний_Варианты">База знаний</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Инструкции</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Navisworks: Работа с коллизиями</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Navisworks: Работа с коллизиями</h1></header><p>Анализ коллизий, создание отчетов (настройка столбцов и ID для &quot;неищущихся&quot; элементов), работа с плагинами (propetrties +), проверка координат файлов сборки, фильтрация элементов по выбору</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="проверка-координат-файлов-сборки-выгрузка-в-csv-файл-с-помощью-инспектор-выбора">Проверка координат файлов сборки (выгрузка в CSV файл с помощью &quot;Инспектор выбора&quot;)<a href="#проверка-координат-файлов-сборки-выгрузка-в-csv-файл-с-помощью-инспектор-выбора" class="hash-link" aria-label="Direct link to Проверка координат файлов сборки (выгрузка в CSV файл с помощью &quot;Инспектор выбора&quot;)" title="Direct link to Проверка координат файлов сборки (выгрузка в CSV файл с помощью &quot;Инспектор выбора&quot;)">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Проверка координат файлов" src="/assets/images/navisworks_2-d1243b7cf503def5d42d50303d5bb725.png" width="2048" height="959" class="img_ev3q"></p>
+<p>Вот обновленная инструкция по экспорту данных о положении файлов NWC из сборки NWF с использованием &quot;Инспектора выбора&quot; и &quot;Редактора параметров&quot; в вашей русскоязычной версии Navisworks 2022:</p>
+<ol>
+<li>
+<p><strong>Откройте &quot;Дерево выбора&quot;:</strong></p>
+<ul>
+<li>
+<p>Если это окно еще не открыто, перейдите на вкладку <strong>&quot;Главная&quot;</strong>.</p>
+</li>
+<li>
+<p>В группе инструментов <strong>&quot;Выбор и поиск&quot;</strong> нажмите кнопку <strong>&quot;Дерево выбора&quot;</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Выделите все NWC файлы в &quot;Дереве выбора&quot;:</strong></p>
+<ul>
+<li>В окне &quot;Дерево выбора&quot; выберите все NWC файлы, данные о положении которых вы хотите экспортировать (например, кликните первый, зажмите Shift, кликните последний).</li>
+</ul>
+</li>
+<li>
+<p><strong>Откройте окно &quot;Инспектор выбора&quot;:</strong></p>
+<ul>
+<li>
+<p>Перейдите на вкладку <strong>&quot;Вид&quot;</strong> в главной ленте Navisworks.</p>
+</li>
+<li>
+<p>В группе инструментов <strong>&quot;Рабочее пространство&quot;</strong> нажмите кнопку <strong>&quot;Окна&quot;</strong>.</p>
+</li>
+<li>
+<p>В выпадающем списке установите галочку напротив пункта <strong>&quot;Инспектор выбора&quot;</strong>. Откроется окно &quot;Инспектор выбора&quot;.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Настройте отображаемые свойства в &quot;Инспекторе выбора&quot; через &quot;Редактор параметров&quot;:</strong></p>
+<ul>
+<li>
+<p>В открывшемся окне <strong>&quot;Инспектор выбора&quot;</strong> найдите и нажмите кнопку <strong>&quot;Краткие определения свойств...&quot;</strong>. (На вашем скриншоте эта кнопка находится в верхней части окна &quot;Инспектор выбора&quot;).</p>
+</li>
+<li>
+<p>Откроется диалоговое окно <strong>&quot;Редактор параметров&quot;</strong>.</p>
+</li>
+<li>
+<p>В окне &quot;Редактор параметров&quot; вы увидите список уже определенных для отображения свойств. Если нужных свойств нет или вы хотите начать с чистого листа, можно удалить существующие (выбрав их и нажав кнопку с красным минусом или аналогичную).</p>
+</li>
+<li>
+<p>Для добавления необходимых вам свойств, последовательно для каждого из них:</p>
+<ol>
+<li>
+<p>Нажмите кнопку с <strong>зеленым плюсом</strong> (&quot;Добавить новое определение свойства&quot;).</p>
+</li>
+<li>
+<p>В новой строке появятся два выпадающих списка: &quot;Свойство&quot; и &quot;Категория&quot;.</p>
+</li>
+<li>
+<p>Настройте их следующим образом для каждого нужного параметра:</p>
+<ul>
+<li>
+<p><strong>Имя файла:</strong></p>
+<ul>
+<li>
+<p>Свойство: Имя</p>
+</li>
+<li>
+<p>Категория: Элемент</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Координата X переноса:</strong></p>
+<ul>
+<li>
+<p>Свойство: Перенос.X</p>
+</li>
+<li>
+<p>Категория: Элемент</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Координата Y переноса:</strong></p>
+<ul>
+<li>
+<p>Свойство: Перенос.Y</p>
+</li>
+<li>
+<p>Категория: Элемент</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Координата Z переноса:</strong></p>
+<ul>
+<li>
+<p>Свойство: Перенос.Z</p>
+</li>
+<li>
+<p>Категория: Элемент</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Угол поворота:</strong></p>
+<ul>
+<li>
+<p>Свойство: Угол поворота</p>
+</li>
+<li>
+<p>Категория: Элемент</p>
+</li>
+</ul>
+</li>
+<li>
+<p><em>(Опционально, но может быть полезно для полной картины):</em></p>
+<ul>
+<li>
+<p><strong>Единицы файла источника (если доступно):</strong></p>
+<ul>
+<li>
+<p>Свойство: (например, Единицы или Единицы модели)</p>
+</li>
+<li>
+<p>Категория: (например, Источник или Элемент)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Масштаб (если он не равен 1):</strong></p>
+<ul>
+<li>
+<p>Свойство: Масштаб.X, Масштаб.Y, Масштаб.Z</p>
+</li>
+<li>
+<p>Категория: Элемент (или Преобразование)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Зеркальное отражение (если используется):</strong></p>
+<ul>
+<li>
+<p>Свойство: (например, Зеркально или Отражение)</p>
+</li>
+<li>
+<p>Категория: Элемент (или Преобразование)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>После добавления всех необходимых свойств в &quot;Редакторе параметров&quot;, нажмите <strong>&quot;ОК&quot;</strong>.</p>
+</li>
+<li>
+<p>Окно &quot;Инспектор выбора&quot; теперь должно отображать только те столбцы (свойства), которые вы настроили.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Экспорт данных из &quot;Инспектора выбора&quot; в CSV:</strong></p>
+<ul>
+<li>
+<p>Убедитесь, что в окне &quot;Инспектор выбора&quot; правильно отображаются данные для всех выделенных NWC файлов в соответствии с настроенными вами столбцами.</p>
+</li>
+<li>
+<p>В нижней части окна &quot;Инспектор выбора&quot; (или в его меню) найдите кнопку <strong>&quot;Экспорт...&quot;</strong> (или &quot;Экспорт в CSV&quot;, &quot;Сохранить как CSV&quot; -- точное название может немного отличаться, но функция экспорта в текстовый/табличный формат).</p>
+</li>
+<li>
+<p>Нажмите эту кнопку, выберите место для сохранения файла, укажите имя файла и выберите тип файла CSV (значения, разделенные запятыми, или аналогичный).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Анализ и использование данных в табличном редакторе:</strong></p>
+<ul>
+<li>
+<p>Откройте сохраненный CSV-файл с помощью Microsoft Excel, Google Sheets или другого табличного редактора.</p>
+</li>
+<li>
+<p>Вы увидите таблицу, где каждая строка представляет один NWC файл, а столбцы соответствуют настроенным вами свойствам: Имя, Перенос.X, Перенос.Y, Перенос.Z, Угол поворота и т.д.</p>
+</li>
+<li>
+<p>Этот файл можно использовать как эталон для отслеживания изменений. При последующих проверках экспортируйте данные заново и сравнивайте их с эталонным файлом.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>Этот детализированный подход с использованием &quot;Редактора параметров&quot; позволит вам точно настроить, какие именно данные о положении файлов будут отображаться в &quot;Инспекторе выбора&quot; и, соответственно, экспортированы в CSV-файл для дальнейшего анализа.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="фильтрация-по-выбору">Фильтрация по выбору<a href="#фильтрация-по-выбору" class="hash-link" aria-label="Direct link to Фильтрация по выбору" title="Direct link to Фильтрация по выбору">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Фильтрация по выбору" src="/assets/images/navisworks_1-c25abda12460c223e90bd3009606ab6b.png" width="2048" height="1108" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="краткая-памятка-фильтрация-и-группировка-конфликтов-в-clash-detective-по-типу-элемента">Краткая памятка: Фильтрация и группировка конфликтов в Clash Detective по типу элемента<a href="#краткая-памятка-фильтрация-и-группировка-конфликтов-в-clash-detective-по-типу-элемента" class="hash-link" aria-label="Direct link to Краткая памятка: Фильтрация и группировка конфликтов в Clash Detective по типу элемента" title="Direct link to Краткая памятка: Фильтрация и группировка конфликтов в Clash Detective по типу элемента">​</a></h3>
+<p><strong>Цель:</strong> Быстро отфильтровать и сгруппировать конфликты, в которых участвуют элементы определённого типа (например, стены типа &quot;ВН_МОП_Газобетон 200мм&quot; или стены, содержащие в имени &quot;трассировка&quot;), для дальнейшего анализа или исключения.</p>
+<p><strong>Последовательность действий:</strong></p>
+<ol>
+<li>
+<p><strong>Выбор эталонного элемента:</strong></p>
+<ul>
+<li>В основной сцене Navisworks или в окне &quot;Дерево выбора&quot; найдите и <strong>выделите один элемент</strong>, который является представителем того типа, по которому вы хотите фильтровать (например, стену с типом &quot;Стены: Базовая стена: ВН_МОП_Газобетон 200мм&quot; или стену с &quot;трассировка&quot; в имени).</li>
+</ul>
+</li>
+<li>
+<p><strong>Выбор всех элементов того же типа:</strong></p>
+<ul>
+<li>
+<p>Перейдите на вкладку <strong>&quot;Главная&quot;</strong> (Home).</p>
+</li>
+<li>
+<p>В группе инструментов <strong>&quot;Выбор и поиск&quot;</strong> (Select &amp; Search) найдите кнопку <strong>&quot;Выбрать...&quot;</strong> (Select Same).</p>
+</li>
+<li>
+<p>В выпадающем меню этой кнопки выберите опцию <strong>&quot;Тот же тип&quot;</strong> (Same Type).</p>
+<ol>
+<li><em>Примечание: Navisworks выберет все элементы в модели, которые имеют тот же тип, что и ваш первоначально выделенный эталонный элемент. Свойство, по которому определяется &quot;тип&quot;, обычно берется из поля &quot;Тип&quot; на вкладке &quot;Свойства&quot; элемента.</em></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Фильтрация результатов в Clash Detective:</strong></p>
+<ul>
+<li>
+<p>Откройте окно <strong>&quot;Clash Detective&quot;</strong> (Вкладка &quot;Главная&quot; -&gt; &quot;Инструменты&quot; -&gt; &quot;Clash Detective&quot;).</p>
+</li>
+<li>
+<p>Перейдите на вкладку <strong>&quot;Результаты&quot;</strong> (Results).</p>
+</li>
+<li>
+<p>В правой части окна, в разделе <strong>&quot;Параметры отображения&quot;</strong> (Display Settings), найдите выпадающий список (на вашем скриншоте он сейчас установлен в &quot;Нет&quot; и обведен желтым).</p>
+</li>
+<li>
+<p>Из этого выпадающего списка выберите опцию <strong>&quot;Включающий&quot;</strong> (Inclusive - Отображение конфликтов, для которых выбран хотя бы один конфликтующий элемент).</p>
+<ol>
+<li><em>Результат:</em> Список конфликтов будет отфильтрован. Теперь в нем будут отображаться только те конфликты, в которых участвует хотя бы один из элементов, выделенных на шаге 2 (т.е. элементы вашего целевого типа).</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Группировка отфильтрованных конфликтов (Опционально, но очень полезно):</strong></p>
+<ul>
+<li>
+<p>Убедитесь, что в списке результатов Clash Detective выделены все отфильтрованные конфликты (можно нажать Ctrl+A в списке конфликтов или просто выделить все видимые).</p>
+</li>
+<li>
+<p>Нажмите кнопку <strong>&quot;Новая группа&quot;</strong> (New Group) под списком конфликтов (на вашем скриншоте обведена желтым).</p>
+</li>
+<li>
+<p>Дайте группе осмысленное имя, например, &quot;Конфликты: Газобетон 200мм&quot; или &quot;Конфликты: Трассировка&quot;.</p>
+</li>
+<li>
+<p>Теперь у вас есть отдельная группа конфликтов, относящихся к выбранному типу элементов.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Дальнейшие действия с группой:</strong></p>
+<ul>
+<li>
+<p><strong>Исключение из основной проверки:</strong> Если эти конфликты нерелевантны, вы можете изменить статус всей группы на &quot;Утверждено&quot;, &quot;Исправлено&quot; или &quot;Проигнорировано&quot;.</p>
+</li>
+<li>
+<p><strong>Фокус на проблеме:</strong> Вы можете работать только с этой группой, скрыв остальные.</p>
+</li>
+<li>
+<p><strong>Выделение элементов только из этой группы для Properties+:</strong></p>
+<ol>
+<li>
+<p>Выберите созданную группу конфликтов в списке.</p>
+</li>
+<li>
+<p>Убедитесь, что в &quot;Параметрах отображения&quot; по-прежнему стоит &quot;Включающий&quot; (или переключите на &quot;Нет&quot;, чтобы видеть все элементы в этих конфликтах).</p>
+</li>
+<li>
+<p>Теперь, при выборе конфликтов <em>только из этой группы</em>, будут подсвечиваться участвующие в них элементы.</p>
+</li>
+<li>
+<p><strong>Чтобы выделить ТОЛЬКО элементы определённой стороны (например, только архитектурные стены из этой группы):</strong></p>
+<ul>
+<li>
+<p>Выделите все конфликты в вашей новой группе.</p>
+</li>
+<li>
+<p>Используйте &quot;Поиск элементов&quot; (&quot;Искать в&quot;: &quot;Текущий выбор&quot;) для отбора только нужной стороны (например, Элемент -&gt; Имя исходного файла -&gt; Содержит -&gt; АР_файл.nwc).</p>
+</li>
+<li>
+<p>Теперь у вас будут выделены только нужные элементы из отфильтрованных и сгруппированных конфликтов, готовые для плагина Properties+.</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/serjkserj/ATR_bim_docs/tree/main/docs/ATR_Navisworks_Работа с коллизиями.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/ATR_Clashes Manager_Отработка коллизий_Архитекторам"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Clashes Manager: Отработка коллизий для архитекторов</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/ATR_Выгрузка  моделей 12.2 V.2"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Выгрузка моделей 12.2 V.2</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#проверка-координат-файлов-сборки-выгрузка-в-csv-файл-с-помощью-инспектор-выбора" class="table-of-contents__link toc-highlight">Проверка координат файлов сборки (выгрузка в CSV файл с помощью &quot;Инспектор выбора&quot;)</a></li><li><a href="#фильтрация-по-выбору" class="table-of-contents__link toc-highlight">Фильтрация по выбору</a><ul><li><a href="#краткая-памятка-фильтрация-и-группировка-конфликтов-в-clash-detective-по-типу-элемента" class="table-of-contents__link toc-highlight">Краткая памятка: Фильтрация и группировка конфликтов в Clash Detective по типу элемента</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Документация</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/serjkserj/ATR_bim_docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 ATR BIM Documentation. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
