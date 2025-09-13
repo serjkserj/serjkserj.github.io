@@ -13,6 +13,9 @@ const projectName = 'serjkserj.github.io';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
   title: 'ATR BIM Documentation',
   tagline: 'Документация по работе с отверстиями в BIM',
   favicon: 'img/favicon.ico',
@@ -78,6 +81,8 @@ const config = {
       }),
     ],
   ],
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
