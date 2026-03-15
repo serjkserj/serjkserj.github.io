@@ -44,6 +44,7 @@ const config = {
     ],
   ],
   themes: ['@docusaurus/theme-mermaid'],
+  scripts: [{src: '/js/diagram-viewer.js', defer: true}],
   themeConfig:
     ({
       image: 'img/handbook-mark.svg',
@@ -114,3 +115,4 @@ const config = {
 };
 
 export default config;
+
