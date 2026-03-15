@@ -1,61 +1,53 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
+﻿import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-const FeatureList = [
+const features = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Профессия без тумана',
+    text:
+      'Учебник шаг за шагом собирает профессию BIM-координатора АР: от среды проекта и ролей до проверки модели и ведения замечаний.',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'IFC, АГР и экспертиза разведены по смыслу',
+    text:
+      'Сложные внешние процессы объяснены без путаницы между требованиями обмена, городской проверки и экспертизы.',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Модель как источник данных',
+    text:
+      'Центральная идея handbook — смотреть на модель как на систему геометрии, атрибутов, зон, площадей, ТЭП и рисков.',
+  },
+  {
+    title: 'Диаграммы и рабочие маршруты',
+    text:
+      'Внутри глав есть Mermaid-схемы, а в приложениях — маршруты проверки, чек-листы и шаблоны для реальной практики.',
+  },
+  {
+    title: 'Подходит для веб-публикации',
+    text:
+      'Контент уже организован как большой docs-раздел: его удобно читать по порядку, искать по модулям и ссылаться на конкретные главы.',
+  },
+  {
+    title: 'Основан на локальных источниках проекта',
+    text:
+      'Структура handbook и акценты выстроены на базе локальных методических и аналитических материалов, а спорные места помечены отдельно.',
   },
 ];
 
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className={styles.section}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+        <div className={styles.heading}>
+          <p className={styles.kicker}>Что делает сайт полезным</p>
+          <Heading as="h2">Не просто набор глав, а рабочая система обучения</Heading>
+        </div>
+        <div className={styles.grid}>
+          {features.map((feature) => (
+            <article key={feature.title} className={styles.card}>
+              <Heading as="h3">{feature.title}</Heading>
+              <p>{feature.text}</p>
+            </article>
           ))}
         </div>
       </div>
