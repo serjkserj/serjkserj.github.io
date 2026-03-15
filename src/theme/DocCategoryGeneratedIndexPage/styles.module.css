@@ -1,0 +1,57 @@
+﻿.generatedIndexPage {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0 0 2rem;
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid rgba(13, 23, 42, 0.08);
+}
+
+.kicker {
+  color: rgba(17, 98, 255, 0.9);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: #0d172a;
+  font-size: clamp(2.4rem, 4.8vw, 4.1rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+}
+
+.description {
+  max-width: 48rem;
+  margin: 0;
+  color: rgba(34, 49, 77, 0.78);
+  font-size: 1.03rem;
+  line-height: 1.72;
+}
+
+.cardsSection {
+  margin-top: 1.6rem;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 760px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
