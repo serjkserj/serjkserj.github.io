@@ -1,29 +1,31 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Onest:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --ifm-color-primary: #0f6b63;
-  --ifm-color-primary-dark: #0d6059;
-  --ifm-color-primary-darker: #0c5a53;
-  --ifm-color-primary-darkest: #094a45;
-  --ifm-color-primary-light: #12766d;
-  --ifm-color-primary-lighter: #147d74;
-  --ifm-color-primary-lightest: #199287;
-  --ifm-background-color: #fcf8f1;
-  --ifm-background-surface-color: #ffffff;
-  --ifm-color-content: #193936;
-  --ifm-heading-color: #0f2624;
-  --ifm-font-family-base: 'IBM Plex Sans', 'Segoe UI', sans-serif;
-  --ifm-heading-font-family: 'IBM Plex Serif', Georgia, serif;
-  --ifm-navbar-background-color: rgba(252, 248, 241, 0.86);
-  --ifm-navbar-link-color: #193936;
-  --ifm-footer-background-color: #efe7da;
-  --ifm-footer-color: #193936;
-  --ifm-footer-link-color: #0f2624;
+  --ifm-color-primary: #0b84ff;
+  --ifm-color-primary-dark: #0077f2;
+  --ifm-color-primary-darker: #0070e3;
+  --ifm-color-primary-darkest: #005cb9;
+  --ifm-color-primary-light: #1f90ff;
+  --ifm-color-primary-lighter: #339bff;
+  --ifm-color-primary-lightest: #5fb2ff;
+  --ifm-background-color: #f3f7ff;
+  --ifm-background-surface-color: rgba(255, 255, 255, 0.84);
+  --ifm-color-content: #22314d;
+  --ifm-heading-color: #0b1831;
+  --ifm-font-family-base: 'Onest', 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Onest', 'Segoe UI', sans-serif;
+  --ifm-navbar-background-color: rgba(248, 251, 255, 0.84);
+  --ifm-navbar-link-color: #22314d;
+  --ifm-footer-background-color: #e9f1ff;
+  --ifm-footer-color: #22314d;
+  --ifm-footer-link-color: #0b1831;
   --ifm-code-font-size: 95%;
   --ifm-button-border-radius: 999px;
-  --ifm-card-border-radius: 1.25rem;
-  --ifm-global-shadow-lw: 0 0.8rem 2rem rgba(15, 38, 36, 0.06);
-  --docusaurus-highlighted-code-line-bg: rgba(15, 107, 99, 0.12);
+  --ifm-card-border-radius: 1.5rem;
+  --ifm-global-shadow-lw: 0 1rem 2.8rem rgba(29, 49, 93, 0.08);
+  --ifm-global-shadow-md: 0 1.4rem 3rem rgba(17, 30, 58, 0.12);
+  --ifm-global-radius: 1.5rem;
+  --docusaurus-highlighted-code-line-bg: rgba(11, 132, 255, 0.1);
 }
 
 html {
@@ -31,73 +33,173 @@ html {
 }
 
 body {
+  color: var(--ifm-color-content);
   background:
-    radial-gradient(circle at top, rgba(200, 83, 48, 0.08), transparent 30rem),
-    linear-gradient(180deg, #fcf8f1 0%, #f9f4ec 100%);
+    radial-gradient(circle at top left, rgba(11, 132, 255, 0.14), transparent 30rem),
+    radial-gradient(circle at top right, rgba(8, 185, 140, 0.12), transparent 28rem),
+    linear-gradient(180deg, #f8fbff 0%, #eef4ff 52%, #f7fbff 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(11, 24, 49, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 24, 49, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.36), transparent 78%);
 }
 
 .navbar {
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(15, 38, 36, 0.06);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(34, 49, 77, 0.08);
+  box-shadow: 0 0.75rem 2rem rgba(17, 30, 58, 0.04);
+}
+
+.navbar__brand {
+  gap: 0.65rem;
+}
+
+.navbar__logo {
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
 .navbar__title {
   font-family: var(--ifm-heading-font-family);
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
+.navbar__link {
+  font-weight: 600;
+}
+
 .button.button--primary {
-  background: linear-gradient(135deg, #0f6b63 0%, #147d74 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.9rem 1.45rem;
   border: none;
-  box-shadow: 0 1rem 2rem rgba(15, 107, 99, 0.2);
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b84ff 0%, #0a67f7 100%);
+  box-shadow: 0 1rem 2rem rgba(11, 132, 255, 0.26);
 }
 
 .button.button--primary:hover {
-  background: linear-gradient(135deg, #0d6059 0%, #127066 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #0979ea 0%, #095ee0 100%);
 }
 
 .theme-doc-sidebar-container {
-  border-right: 1px solid rgba(15, 38, 36, 0.06);
-  background: rgba(255, 255, 255, 0.74);
+  border-right: 1px solid rgba(34, 49, 77, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
 }
 
 .menu__link {
-  border-radius: 0.8rem;
+  border-radius: 0.95rem;
 }
 
 .menu__link--active {
-  background: rgba(15, 107, 99, 0.1);
+  background: rgba(11, 132, 255, 0.1);
 }
 
 .pagination-nav__link {
-  border-radius: 1rem;
-  border: 1px solid rgba(15, 38, 36, 0.08);
-  background: linear-gradient(180deg, #ffffff 0%, #f7f2ea 100%);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(34, 49, 77, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(242, 247, 255, 0.96) 100%);
 }
 
 .markdown h1,
 .markdown h2,
 .markdown h3,
 .markdown h4 {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
+  font-weight: 800;
 }
 
 .markdown h1 {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(2.3rem, 4vw, 3.3rem);
 }
 
 .markdown blockquote {
-  border-left: 4px solid rgba(200, 83, 48, 0.5);
-  background: rgba(255, 255, 255, 0.66);
+  border-left: 4px solid rgba(11, 132, 255, 0.5);
+  background: rgba(255, 255, 255, 0.74);
 }
 
 .markdown table {
   display: table;
   width: 100%;
-  background: #fffdfa;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.theme-mermaid {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1.3rem 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(34, 49, 77, 0.08);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at top right, rgba(11, 132, 255, 0.06), transparent 16rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(244, 248, 255, 0.98) 100%);
+  box-shadow: 0 1rem 2.6rem rgba(17, 30, 58, 0.06);
+}
+
+.theme-mermaid svg {
+  display: block;
+  min-width: 56rem;
+  max-width: none !important;
+  height: auto;
+}
+
+.diagram-details {
+  margin: 1rem 0 1.2rem;
+}
+
+.diagram-details summary {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(11, 132, 255, 0.08);
+  color: #0b4ba4;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.diagram-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.theme-doc-markdown {
+  max-width: 54rem;
 }
 
 .footer {
-  border-top: 1px solid rgba(15, 38, 36, 0.08);
+  border-top: 1px solid rgba(34, 49, 77, 0.08);
+}
+
+@media (max-width: 996px) {
+  .theme-mermaid svg {
+    min-width: 44rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .theme-mermaid {
+    padding: 0.85rem;
+  }
+
+  .theme-mermaid svg {
+    min-width: 36rem;
+  }
 }
