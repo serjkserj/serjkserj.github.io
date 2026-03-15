@@ -1,41 +1,38 @@
-# Website
+﻿# BIM Handbook Pages Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Публичный сайт handbook: `https://serjkserj.github.io`.
 
-## Installation
+Репозиторий содержит только актуальный исходный код `Docusaurus`-сайта для публикации handbook и связанных рабочих приложений.
+
+## Что здесь должно жить
+
+- `docs/` — основной контент handbook
+- `src/` — компоненты и стили сайта
+- `static/` — минимально необходимые публичные ассеты сайта
+- `docusaurus.config.js` и `sidebars.js` — конфигурация навигации и сборки
+- `.github/workflows/deploy.yml` — актуальный workflow публикации в GitHub Pages
+
+## Что здесь не должно жить
+
+- архивы старых статей и старых docs-наборов
+- одноразовые скрипты проверки и временные отладочные файлы
+- скриншоты, логи и временные HTML-страницы
+- локальные backup-папки и служебные окружения обработки документов
+- старые или дублирующие deployment workflow
+
+## Локальная работа
 
 ```bash
-yarn
+npm ci
+npm run start
 ```
 
-## Local Development
+## Production build
 
 ```bash
-yarn start
+npm run build
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Публикация идет через GitHub Actions workflow `deploy.yml` при push в `main`.

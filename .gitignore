@@ -1,4 +1,4 @@
-# Dependencies
+﻿# Dependencies
 /node_modules
 
 # Production
@@ -7,6 +7,21 @@
 # Generated files
 .docusaurus
 .cache-loader
+
+# Local tooling and temporary workspaces
+archive_content/
+backup/
+backup_bim_docs/
+markitdown-env/
+.roomodes
+
+# Temporary diagnostics and artifacts
+roo_code_log.txt
+docs_screenshot.png
+verification_mermaid_success.png
+temp_page.html
+temp_page_atr.html
+docusaurus.config.js.txt
 
 # Misc
 .DS_Store
