@@ -7,14 +7,6 @@ source_priority: medium
 
 # PERSONAL DEVELOPMENT PLAN
 
-```mermaid
-flowchart LR
-    A[Первый месяц] --> B[Первые 3 месяца]
-    B --> C[Первые 6 месяцев]
-    C --> D[12 месяцев]
-    D --> E[Дальнейший рост]
-```
-
 ## 1. Первый месяц
 
 - Понять базовую среду проекта
