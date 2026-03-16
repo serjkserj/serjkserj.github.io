@@ -1,0 +1,57 @@
+.progressPanel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+}
+
+.progressCard {
+  padding: 0.9rem 1rem 0.95rem;
+  border: 1px solid rgba(13, 23, 42, 0.08);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.progressMeta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-bottom: 0.55rem;
+}
+
+.progressLabel {
+  color: #51627c;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.progressValue {
+  color: #0d172a;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.progressBar {
+  overflow: hidden;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: rgba(17, 98, 255, 0.1);
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1162ff 0%, #4f86ff 100%);
+}
+
+@media (max-width: 996px) {
+  .progressPanel {
+    grid-template-columns: 1fr;
+  }
+}
