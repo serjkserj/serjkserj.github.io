@@ -13,7 +13,7 @@ const config = {
   organizationName,
   projectName,
   deploymentBranch: 'main',
-  trailingSlash: false,
+  trailingSlash: true,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   future: {
@@ -140,3 +140,4 @@ const config = {
 };
 
 export default config;
+
