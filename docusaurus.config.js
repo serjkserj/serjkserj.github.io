@@ -43,6 +43,23 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: true,
+        docsRouteBasePath: ['handbook'],
+        language: ['ru', 'en'],
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+      },
+    ],
+  ],
   themes: ['@docusaurus/theme-mermaid'],
   scripts: [{src: '/js/diagram-viewer.js', defer: true}],
   themeConfig:
@@ -72,6 +89,7 @@ const config = {
             label: 'Приложения',
             position: 'left',
           },
+          {type: 'search', position: 'right'},
           {
             href: 'https://github.com/serjkserj/bim-handbook',
             label: 'GitHub',
@@ -115,4 +133,3 @@ const config = {
 };
 
 export default config;
-
