@@ -21,6 +21,7 @@ source_priority: medium
 - словарь терминов;
 - таблица терминов;
 - карта нормативных и методических источников;
+- карточки документов для ссылочного аппарата;
 - таблицы ролей, стадий и разделов;
 - таблицы по IFC, проверкам и параметрам;
 - чек-листы аудита, IFC, АГР и экспертизы;
@@ -36,6 +37,7 @@ source_priority: medium
 
 1. Сначала взять базовую опору:
    `GLOSSARY`, `TERMS_TABLE`, `NORMATIVE_SOURCES_MAP`, `ROLES_AND_RESPONSIBILITIES_TABLE`, `STAGES_TABLE`, `SECTIONS_TABLE`.
+   `DOCUMENT_REFERENCE_CARDS` держать рядом, когда нужно понять, на что именно ведет сноска.
 2. Потом перейти к рабочим таблицам модели:
    `IFC_CLASSES_AR_TABLE`, `MODEL_ELEMENT_CHECK_TABLE`, `MODEL_ELEMENT_PARAMETER_SOURCE_TABLE`.
 3. Затем использовать проверочные материалы:
@@ -50,6 +52,7 @@ source_priority: medium
 - `GLOSSARY`
 - `TERMS_TABLE`
 - `NORMATIVE_SOURCES_MAP`
+- `DOCUMENT_REFERENCE_CARDS`
 - `ROLES_AND_RESPONSIBILITIES_TABLE`
 - `STAGES_TABLE`
 - `SECTIONS_TABLE`

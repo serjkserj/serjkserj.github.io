@@ -7,6 +7,8 @@ source_priority: high
 
 # CHECKLIST PREPARE AGR
 
+Этот чек-лист — производный инструмент, собранный из `АГР`-документов и связанных методических материалов, а не самостоятельный первоисточник требований.[^appendix-agr-checklist]
+
 ## 1. Состав и формат цифрового пакета
 
 - [ ] Понятно, какой комплект передается наружу: `IFC`, `XML`, сопровождающие материалы
@@ -51,3 +53,5 @@ source_priority: high
 - [ ] Известные риски проговорены до подачи
 
 Этот чек-лист особенно полезно проходить вместе с модулем про АГР и модулем про `QC`, чтобы не сводить готовность к подаче только к формальному наличию файлов.
+
+[^appendix-agr-checklist]: Опора: [AGR-IFC-2026 — Требования к IFC-материалам для АГР](./DOCUMENT_REFERENCE_CARDS.md#agr-ifc-2026), [AGR-IFC-METHOD-2026 — Применение IFC на этапе АГР](./DOCUMENT_REFERENCE_CARDS.md#agr-ifc-method-2026), [AGR-TEP-METHOD — Методичка по подсчету ТЭП](./DOCUMENT_REFERENCE_CARDS.md#agr-tep-method), [AGR-3D-REQ-2023 — Требования к 3D-моделям Москвы](./DOCUMENT_REFERENCE_CARDS.md#agr-3d-req-2023), [AGR-ARCHCOMM-PROCEDURE-2026 — Публичная страница Архкомиссии](./DOCUMENT_REFERENCE_CARDS.md#agr-archcomm-procedure-2026).

@@ -7,6 +7,8 @@ source_priority: high
 
 # CHECKLIST PREPARE IFC
 
+Этот чек-лист — производный инструмент для проверки обменной модели перед выдачей; его пункты должны читаться через требования текущего рубежа и целевого внешнего чтения.[^appendix-ifc-checklist]
+
 ## 1. Цель экспорта
 
 - [ ] Понятно, зачем нужен текущий IFC
@@ -40,3 +42,5 @@ source_priority: high
 - [ ] Зафиксированы проблемы, которые проявились именно после экспорта
 
 Этот чек-лист полезно проходить вместе с модулем про `IFC` и главой про предэкспортную проверку, чтобы экспорт не становился первой настоящей диагностикой модели.
+
+[^appendix-ifc-checklist]: Опора: [AGR-IFC-2026 — Требования к IFC-материалам для АГР](./DOCUMENT_REFERENCE_CARDS.md#agr-ifc-2026), [AGR-IFC-METHOD-2026 — Применение IFC на этапе АГР](./DOCUMENT_REFERENCE_CARDS.md#agr-ifc-method-2026), [EXP-CIM-GENERAL-2025 — Общие требования к ЦИМ. Редакция 5.0](./DOCUMENT_REFERENCE_CARDS.md#exp-cim-general-2025), [EXP-KR-IDS-5.0 — IDS МГЭ 5.0 для КР](./DOCUMENT_REFERENCE_CARDS.md#exp-kr-ids-5-0).

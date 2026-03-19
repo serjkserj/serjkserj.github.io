@@ -66,7 +66,7 @@ source_priority: medium
 
 - для `IfcWall` встречаются поля из `Pset_WallCommon` вроде `LoadBearing` и `FireRating`;
 - для `IfcSpace` - поля из `Pset_SpaceCommon` и `Pset_SpaceFireSafetyRequirements`;
-- для `IfcSite` и контура `АГР` - отдельные `RUS_*` атрибуты вроде `RUS_LandID`.
+- для `IfcSite` и контура `АГР` - отдельные `RUS_*` атрибуты вроде `RUS_LandID`.[^m9-param-sources]
 
 Это хороший признак зрелости: источник значения связывается не только с "ячейкой в Revit", но и с тем, какой именно внешний смысл это значение должно выдержать.
 
@@ -120,3 +120,5 @@ source_priority: medium
 Для BIM-координатора это один из главных признаков зрелой модели: данные в ней должны быть не только заполнены, но и объяснимы.
 
 Эта глава напрямую связывает модуль про параметры с модулем про показатели и с будущим `QC`: как только у значения нет понятного источника, у модели почти сразу появляется проверочный риск.
+
+[^m9-param-sources]: Опора: [AGR-IFC-2026 — Требования к IFC-материалам для АГР](../90_appendices/DOCUMENT_REFERENCE_CARDS.md#agr-ifc-2026), [EXP-CIM-GENERAL-2025 — Общие требования к ЦИМ. Редакция 5.0](../90_appendices/DOCUMENT_REFERENCE_CARDS.md#exp-cim-general-2025), [EXP-CIM-MSSK-THEMATIC-PACK-2025 — Пакет «ЦИМ и МССК»](../90_appendices/DOCUMENT_REFERENCE_CARDS.md#exp-cim-mssk-thematic-pack-2025), [EXP-KR-IDS-5.0 — IDS МГЭ 5.0 для КР](../90_appendices/DOCUMENT_REFERENCE_CARDS.md#exp-kr-ids-5-0).

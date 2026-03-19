@@ -7,6 +7,8 @@ source_priority: high
 
 # CHECKLIST PREPARE EXPERTISE
 
+Этот чек-лист — производный инструмент, собранный из документов экспертизы и тематических приложений, а не самостоятельный первоисточник требований.[^appendix-exp-checklist]
+
 ## 1. Структура и читаемость модели
 
 - [ ] Модель читается как система, а не как авторский файл
@@ -51,3 +53,5 @@ source_priority: high
 - [ ] Понятно, какие проверки относятся к общим требованиям, а какие — к специализированному типу объекта
 
 Этот чек-лист не должен заменять чек-лист к АГР: его полезно использовать именно как отдельную рамку для более строгого внешнего чтения модели.
+
+[^appendix-exp-checklist]: Опора: [EXP-CIM-GENERAL-2025 — Общие требования к ЦИМ. Редакция 5.0](./DOCUMENT_REFERENCE_CARDS.md#exp-cim-general-2025), [EXP-CIM-KR-2025 — Требования к ЦИМ КР. Редакция 5.0](./DOCUMENT_REFERENCE_CARDS.md#exp-cim-kr-2025), [EXP-TSIM-OKS-2026-3.2 — Требования к ТСИМ ОКС. Редакция 3.2](./DOCUMENT_REFERENCE_CARDS.md#exp-tsim-oks-2026-3-2), [EXP-CIM-MSSK-THEMATIC-PACK-2025 — Пакет «ЦИМ и МССК»](./DOCUMENT_REFERENCE_CARDS.md#exp-cim-mssk-thematic-pack-2025), [EXP-KR-IDS-5.0 — IDS МГЭ 5.0 для КР](./DOCUMENT_REFERENCE_CARDS.md#exp-kr-ids-5-0).
