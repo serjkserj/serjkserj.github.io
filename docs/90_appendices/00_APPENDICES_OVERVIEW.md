@@ -20,6 +20,7 @@ source_priority: medium
 
 - словарь терминов;
 - таблица терминов;
+- карта нормативных и методических источников;
 - таблицы ролей, стадий и разделов;
 - таблицы по IFC, проверкам и параметрам;
 - чек-листы аудита, IFC, АГР и экспертизы;
@@ -34,7 +35,7 @@ source_priority: medium
 У приложений есть рекомендуемый порядок. Их не стоит воспринимать как случайный набор карточек.
 
 1. Сначала взять базовую опору:
-   `GLOSSARY`, `TERMS_TABLE`, `ROLES_AND_RESPONSIBILITIES_TABLE`, `STAGES_TABLE`, `SECTIONS_TABLE`.
+   `GLOSSARY`, `TERMS_TABLE`, `NORMATIVE_SOURCES_MAP`, `ROLES_AND_RESPONSIBILITIES_TABLE`, `STAGES_TABLE`, `SECTIONS_TABLE`.
 2. Потом перейти к рабочим таблицам модели:
    `IFC_CLASSES_AR_TABLE`, `MODEL_ELEMENT_CHECK_TABLE`, `MODEL_ELEMENT_PARAMETER_SOURCE_TABLE`.
 3. Затем использовать проверочные материалы:
@@ -48,6 +49,7 @@ source_priority: medium
 
 - `GLOSSARY`
 - `TERMS_TABLE`
+- `NORMATIVE_SOURCES_MAP`
 - `ROLES_AND_RESPONSIBILITIES_TABLE`
 - `STAGES_TABLE`
 - `SECTIONS_TABLE`
