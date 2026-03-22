@@ -51,7 +51,7 @@ function HeroPanel() {
               работе координатора на проекте.
             </p>
             <div className={styles.heroActions}>
-              <Link className="button button--primary button--lg" to="/handbook/">
+              <Link className="button button--primary button--lg" to="/handbook">
                 Открыть handbook
               </Link>
               <Link className={styles.secondaryAction} to="/handbook/appendices/APPENDICES_OVERVIEW">

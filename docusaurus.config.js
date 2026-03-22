@@ -84,7 +84,7 @@ const config = {
           {
             title: 'Учебник',
             items: [
-              {label: 'Открыть handbook', to: '/handbook/'},
+              {label: 'Открыть handbook', to: '/handbook'},
               {label: 'Приложения', to: '/handbook/appendices/APPENDICES_OVERVIEW'},
             ],
           },
