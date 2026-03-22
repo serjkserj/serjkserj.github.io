@@ -43,7 +43,32 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: ['handbook'],
+        language: ['ru', 'en'],
+        hashed: true,
+        removeDefaultStemmer: true,
+        searchResultLimits: 12,
+        searchResultContextMaxLength: 100,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarShortcut: true,
+        searchBarShortcutHint: false,
+        ignoreFiles: [
+          '/handbook/appendices/CHECKLIST_TEMPLATE',
+          '/handbook/appendices/REMARK_TEMPLATE',
+        ],
+      },
+    ],
+  ],
   themes: ['@docusaurus/theme-mermaid'],
+  scripts: [{src: '/js/diagram-viewer.js', defer: true}],
   themeConfig:
     ({
       image: 'img/handbook-mark.svg',
@@ -71,6 +96,7 @@ const config = {
             label: 'Приложения',
             position: 'left',
           },
+          {type: 'search', position: 'right'},
           {
             href: 'https://github.com/serjkserj/bim-handbook',
             label: 'GitHub',
